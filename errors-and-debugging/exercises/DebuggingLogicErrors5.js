@@ -14,8 +14,9 @@ if (fuelLevel >= 20000) {
    console.log('WARNING: Insufficient fuel!');
    launchReady = false;
 }
+let fuelCheckResult = launchReady;
 
-console.log("launchReady = ", launchReady);
+console.log("Fuel Results = ", fuelCheckResult);
 
 if (crewStatus && computerStatus === 'green'){
    console.log('Crew & computer cleared.');
@@ -25,4 +26,4 @@ if (crewStatus && computerStatus === 'green'){
    launchReady = false;
 }
 
-console.log("launchReady = ", launchReady);
+console.log("Computer and Crew Status = ", launchReady);
